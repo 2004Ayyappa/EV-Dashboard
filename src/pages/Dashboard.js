@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, onValue } from 'firebase/database';
+import EVLogo from '../assets/logo.png'; // Adjust the path to your actual logo
+
+
 import { 
   Box, Container, Grid, Typography, Button, Paper, 
   CircularProgress, LinearProgress, IconButton, 
@@ -413,6 +416,11 @@ const Dashboard = () => {
           alignItems: 'center', 
           mb: 3 
         }}>
+          <img 
+    src={EVLogo} 
+    alt="EV Logo" 
+    style={{ width: 80, height: 80 }} // Adjust size as needed
+  />
           <Typography 
             variant="h5" 
             component="h1" 
